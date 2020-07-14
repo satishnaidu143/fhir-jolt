@@ -1,0 +1,17 @@
+[
+  {
+    "operation": "shift",
+    "spec": {
+      "resource": "resourceType",
+      "system": "clinicalStatus.coding[0].system",
+      "code": "clinicalStatus.coding[0].code",
+      "note": "note[]",
+      "type": "type",
+      "typeOfCategory": "category[]",
+      "criticality": "criticality",
+      "coding": "code.coding[]",
+      "reference": "patient.&"
+    }
+  }
+
+]
