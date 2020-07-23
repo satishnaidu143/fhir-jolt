@@ -1,0 +1,16 @@
+pipeline{
+ agent any
+   stages{
+     stage('cloning the source code'){
+       steps{
+         echo "Building project..."
+         "git clone https://github.com/kesav-gandham/fhir-jolt.git"
+       }
+     }
+     stage('package'){
+       steps{
+         echo "building the project..."
+         bat "mvn package"
+       }
+     }
+     }
